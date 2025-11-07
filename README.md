@@ -23,6 +23,11 @@ Web上で動作するアンケートシステムです。アンケートの作�
 - 分岐条件に応じた動的なページ遷移
 - 回答結果のJSONダウンロード
 
+## デモ
+
+GitHub Pagesで公開されています：
+- URL: `https://[your-username].github.io/enquete-demo/`
+
 ## セットアップ
 
 ### 必要な環境
@@ -143,6 +148,22 @@ npm run preview
   "completedAt": "2024-01-01T00:00:00.000Z"
 }
 ```
+
+## GitHub Pagesへのデプロイ
+
+このプロジェクトはGitHub Actionsを使って自動的にGitHub Pagesにデプロイされます。
+
+### 初回セットアップ
+
+1. GitHubリポジトリの「Settings」→「Pages」に移動
+2. **Source**を「GitHub Actions」に設定
+3. `main`または`master`ブランチにプッシュすると自動的にデプロイされます
+
+### デプロイの確認
+
+- GitHub Actionsのワークフローは`.github/workflows/deploy.yml`で定義されています
+- デプロイ状況は「Actions」タブで確認できます
+- デプロイが完了すると、`https://[your-username].github.io/enquete-demo/`でアクセスできます
 
 ## 注意事項
 
